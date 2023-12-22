@@ -1,6 +1,6 @@
 {
   "name": "homer-proxy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Homer Proxy is a simple, effective solution designed to enhance the functionality of the Homer Dashboard. This project primarily addresses CORS issues, secure handling of passwords and API keys, and facilitates complex integrations.",
   "license": "MIT",
   "author": "Tomas Vecera <tomas@vecera.dev>",
