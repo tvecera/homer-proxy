@@ -1,0 +1,53 @@
+server:
+  port: 3000
+  debug: false
+
+## IP or domain without scheme (without http, https)
+unifi:
+  host: 'change.me'
+  port: '443'
+  type: 'credentials'
+  username: 'change.me'
+
+prusalink:
+  host: 'http://change.me'
+  type: 'apikey'
+
+fibaro:
+  host: 'https://change.me'
+  type: 'credentials'
+  username: 'change.me'
+
+pihole:
+  host: 'http://change.me'
+  type: 'apikey'
+
+portainer:
+  host: 'http://change.me'
+  port: '9000'
+  type: 'apikey'
+
+wud:
+  host: 'http://change.me'
+  type: 'credentials'
+  username: 'change.me'
+
+tasmota:
+  - name: first
+    host: 'http://change.me'
+    type: 'credentials'
+    username: 'change.me'
+  - name: second
+    host: 'http://change.me'
+    type: 'credentials'
+    username: 'change.me'
+
+osmc:
+  - name: first
+    host: 'http://change.me'
+    type: 'credentials'
+    username: 'change.me'
+  - name: second
+    host: 'http://change.me'
+    type: 'credentials'
+    username: 'change.me'

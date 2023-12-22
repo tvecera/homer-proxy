@@ -1,0 +1,31 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "globals": {
+    "fetch": "readonly",
+    "test": "readonly",
+    "expect": "readonly"
+  },
+  "rules": {
+    "arrow-parens": [1, "as-needed"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_"
+      }
+    ],
+    "linebreak-style": "off",
+    "@typescript-eslint/no-empty-function": ["warn"],
+    "no-debugger": "warn"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "homer-proxy",
+  "version": "0.0.3",
+  "description": "Homer Proxy is a simple, effective solution designed to enhance the functionality of the Homer Dashboard. This project primarily addresses CORS issues, secure handling of passwords and API keys, and facilitates complex integrations.",
+  "license": "MIT",
+  "author": "Tomas Vecera <tomas@vecera.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tvecera/homer-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tvecera/homer-proxy/issues/",
+    "email": "tomas@vecera.dev"
+  },
+  "keywords": [
+    "unifi",
+    "proxy",
+    "homer",
+    "homer-dashboard"
+  ],
+  "main": "src/homer-proxy.ts",
+  "scripts": {
+    "clean": "rimraf .build node_modules",
+    "build": "tsc -p .",
+    "dev": "npx nodemon ./src/homer-proxy.ts",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "node-unifi": "^2.5.1",
+    "pino-http": "^8.6.0",
+    "pino-pretty": "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "3.1.1",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
